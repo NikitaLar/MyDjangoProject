@@ -1,0 +1,43 @@
+POST http://127.0.0.1:8000/Addusers/
+Content-Type: application/json
+
+{
+"username": "vick@example.com",
+"password": "123451221",
+"emailid": "2311@example.com",
+"is_active": 1
+}
+
+###
+GET http://127.0.0.1:8000/getusers/
+
+###
+GET http://127.0.0.1:8000/getusersid/
+Content-Type: application/json
+
+{
+"username": "vick@example.com",
+"password": "123451221"
+}
+
+###
+PUT http://127.0.0.1:8000/Editusers/
+Content-Type: application/json
+
+{
+"username": "vick@example.com",
+"password": "1234222222",
+"emailid": "vick@example.com",
+"is_active": 1
+}
+
+###
+DELETE http://127.0.0.1:8000/Delete_User/
+Content-Type: application/json
+
+{
+"username": "vick@example.com"
+}
+
+
+
